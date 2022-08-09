@@ -61,8 +61,8 @@ main section article img {
       width: 200px;
       padding: auto;
       border-radius: 10px;
-      box-shadow: 0 0 20px 0;
-      color: rgb(0, 26, 255);
+      box-shadow: 0 0 18px 0;
+      color: rgba(58, 108, 209, 0.833);
 }
 
 .btn {
@@ -152,6 +152,21 @@ nav a:hover {
       max-width: 1400px;
       margin: auto;
 }
+.item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+}
+.grid-container {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      padding: 70px;
+}
+h3 {
+      text-align: center
+
+}
 
 /*css grid responsive/*
 /*mobile*/
@@ -162,6 +177,10 @@ nav a:hover {
       }
 
       .container {
+            flex-direction: column;
+      }
+      .grid-container {
+            display: flex; 
             flex-direction: column;
       }
 
@@ -184,6 +203,13 @@ nav a:hover {
 @media screen and (max-width: 768px) {
       .container {
             flex-direction: column;
+      }
+      .grid-container {
+            display: flex; 
+            flex-direction: column;
+      }
+      h3  {
+            text-align: center;
       }
 
       .img-main {
